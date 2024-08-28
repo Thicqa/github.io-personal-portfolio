@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Portfolio</title>
+    <link rel="stylesheet"href="styles.css" />
+    
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body> 
+    <div id="headers"></div>
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="/" id="navbar_logo"><i class="fas fa-gem"></i>Rosmery </a>
+        <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"> </span>
+
+        </div>
+        <div id="header">
+         <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="/" class="navbar_links"> Home</a></li>
+            <li class="navbar_item">
+                <a href="#about" class="navbar_links">About Me</a> </li>
+            <li class="navbar_item"> 
+                <a href="#services" class="navbar_links">Services </a>
+            </li>
+            <li class="navbar_item">
+                <a href="#portfolio" class="navbar_links">Portfolio </a>
+            </li>
+            <li class="navbar_item">
+                <a href="#contact" class="navbar_links">Contact</a>
+            </li>
+           
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+         </ul>
+         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+       </div>
+    </nav>
+    <!--Hero Section -->
+    <div class="main">
+       <div class="main_container">
+        <div class="main_content">
+            <h1>AWS Solution Architect Associate<br>CyberSecurity Analist<br> Web Developer</h1>
+            <h2>AWS Re/Start</h2>
+            <p>Feel free to reach out if you would like to <br>connect or discuss 
+            potenctial opportunities.</p>
+           <br>
+        </div>
+        <div class="main_img--container">
+            <img src="rose.jpeg"alt="pic" id="main_img"/>
+        </div>
+       </div>
+    </div>
+    <!-----about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo01.jpg" alt="">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub"> About Me </h1>
+                        <p> Ibegan my career as software devoloper, where I honed my skills in various programing languages<br>
+                            such a Html, Css, Python and Php.My experience includes developing web that I having worked in proyects<br>
+                            raging from small startups, always striving  to write clean.efficient, and maintainable code.My journey into <br>
+                            cyberseurity was sparked by an increasing interest in security system .Recongnizing the critical importance of 
+                            protecting  data and ensuring the integrity of software. <p> Coursera of Cybersecurity Analist</p>
+                        <div class="tab">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                          <ul>
+                            <li><span>AWS Solution Arquitect Associate Saa-C03</span><br>aws Global infrastructure as fail tolerance<br>
+                                Database: RDS DynamoDB, Redshift,Aurora low latency<br>
+                                Security: IAM,Guardrails, WAF,Health checks<br>
+                                Machine learning: SageMarker, Rekognition,Comprehend<br>
+                                Analytics: Athena, Mecie, EMR </li>
+                            <li><span>AWS RE/START</span> <br>Amazon EC2: Storage, networking, OS..<br>
+                            Cloud architecture design:as cloud app design and cloud management and monotoring.<br>
+                        Troubleshooing: Solving problems example;password or security or cost management<br>
+                    Implementation: as server model an IT roadman and IT roadmap <br>
+                              Load & performance testing:identify bottlenecks, scability issues.</li>
+                            <li><span>Cybersecurity Analist</span><br>Networking Security: Firewalls,
+                            IDS/IPS<br>Security coding practices,OWASP guidelines<br>
+                        Treat Analysis: Penetration testing,vulnerability assessment<br>
+                            Incident Response: Forensics, incident handling</li>
+                            <li><span>Web Developer</span><br>Create websites, building technical front-end <br>
+                            or back-end using code as html C++, Java script, php python and react.</li>
+                            <li><span>Photoshop /affinity editor </span><br> Designing: pictures modify photos and digital paint </li>
+                          </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                              <li><span> 2024 Solution Architect Associate</span> <br>Buiding static&Dynamic web,Building Cloudformation with YAML,integrated CloudWatch logs metrics <br>
+                                Routing policies failover,latency and traffic flow <br> Decouple with SQS FIFO and Cost Optimazation at the console of aws </li>
+                              <li><span>2024 Aws Practitioner</span><br>Building in the console of aws:Iam policies,S3 buckets, Ec2 container,security groups staless and stafull,Cloudwatch alarms <br> monitoring CPU
+                               using the cloud shell for prevent Sql injection attacks,Aws CLI, Script tools for batch or nano </b></li>
+                              <li><span>2023</span><br>Factoria 5:front-end and Back-end</li>
+                              <li><span>2023</span><br> Create website for friends</li>
+                              <li><span> 2022</span><br> Digital paiting in Open sea NFT</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>AWS Machine learning</span><br>Solution Architect Associate SAA-C03</li>
+                              <li><span>Google-Coursera</span> <br>Cybersecurity Analist</li>
+                              <li><span>Factoria F5 </span><br> Back-end Php Mysql <br> Front-end: Html, C++ Python and Java Script</li>
+                              <li><span>Factoria F5</span><br> aws RE/STAR cloud </li>
+                              
+                            </ul>
+                          </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!----services--->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    
+                <h2>Web Design</h2>
+                <p>This was my proyect that I being created  in Amazon dashboard AWS an static website a copy of amazon page</p>
+               
+                </div>
+            
+             <div>
+                
+                <h2>Photoshop Design</h2>
+                <p> I can change or modify any photo "I turn your pictures in an fairy dream" </p>
+                
+             </div>
+             <div> 
+                <h2>Digital Art</h2>
+                <p> Lets make art in a digital, this is the new art in 2024</p>
+                
+              </div>
+            </div>
+        </div>
+    </div> <br> <br>
+    <!----portfolio-->
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="copy.png" alt="" width="40px" height="450px">
+                   <div class="layer">
+                    <h3>Developer "website" </h3>
+                    <p>The website  architecture aws connects to the  people around the world</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                   </div>
+                </div>
+            
+               <div class="work">
+                  <img src="water.JPG" alt=""width="40px" height="450px">
+                  <div class="layer">
+                    <h3>Photoshop </h3>
+                    <p>I call "waterboddy" is mix of jungle and clouds</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                   </div>
+              </div>
+              <div class="work">
+                  <img src="heart.jpg" alt="" width="250px"  height="450px">
+                  <div class="layer">
+                    <h3>Digital Paiting </h3>
+                    <p> "is easy to give your heart,is hard to get a heart"</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                   </div>
+              </div>
+           </div>
+           <a href="#" class="#"></a> 
+           <br>
+            <br>
+           <br>
+           <br>
+           <br>
+        </div>
+
+    </div>
+    <!----contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><ion-icon name="mail-outline"></ion-icon> <br>sushu@hotmail.com</p>
+                    <p> <ion-icon name="call-outline"></ion-icon><br> 01234567</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                    <a href="#" download class="btn btn2"> Download Cv</a>
+                   </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Messsage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script> 
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       } 
+        </Script>
+   
+    <script src="app.js"></script>
+</body>
+</html>
